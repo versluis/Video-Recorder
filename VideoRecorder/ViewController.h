@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+@import MediaPlayer;
 
 @interface ViewController : UIViewController <UIImagePickerControllerDelegate, UINavigationControllerDelegate>
 

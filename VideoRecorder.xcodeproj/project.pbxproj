@@ -22,6 +22,7 @@
 		D2511BAA1882E17600DF3A22 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2511BA81882E17600DF3A22 /* InfoPlist.strings */; };
 		D2511BAC1882E17600DF3A22 /* VideoRecorderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D2511BAB1882E17600DF3A22 /* VideoRecorderTests.m */; };
 		D2511BB61882E5FB00DF3A22 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2511BB51882E5FB00DF3A22 /* MobileCoreServices.framework */; };
+		D27158B118835CDD00CFFF43 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D27158B018835CDD00CFFF43 /* MediaPlayer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,7 @@
 		D2511BA91882E17600DF3A22 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D2511BAB1882E17600DF3A22 /* VideoRecorderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoRecorderTests.m; sourceTree = "<group>"; };
 		D2511BB51882E5FB00DF3A22 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		D27158B018835CDD00CFFF43 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D27158B118835CDD00CFFF43 /* MediaPlayer.framework in Frameworks */,
 				D2511BB61882E5FB00DF3A22 /* MobileCoreServices.framework in Frameworks */,
 				D2511B831882E17600DF3A22 /* CoreGraphics.framework in Frameworks */,
 				D2511B851882E17600DF3A22 /* UIKit.framework in Frameworks */,
@@ -104,6 +107,7 @@
 		D2511B7F1882E17600DF3A22 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D27158B018835CDD00CFFF43 /* MediaPlayer.framework */,
 				D2511BB51882E5FB00DF3A22 /* MobileCoreServices.framework */,
 				D2511B801882E17600DF3A22 /* Foundation.framework */,
 				D2511B821882E17600DF3A22 /* CoreGraphics.framework */,

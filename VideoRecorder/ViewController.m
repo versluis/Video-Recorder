@@ -9,8 +9,10 @@
 #import "ViewController.h"
 #import <MobileCoreServices/UTCoreTypes.h>
 
+
 @interface ViewController ()
 
+@property (strong, nonatomic) IBOutlet UIView *videoView;
 - (IBAction)recordButton:(id)sender;
 - (IBAction)playbackButton:(id)sender;
 
@@ -57,6 +59,15 @@
     // pick a video from the documents directory
     NSURL *video = [self grabFileURL:@"video.mov"];
     
+    // create a movie player view controller
+    MPMoviePlayerViewController * controller = [[MPMoviePlayerViewController alloc]initWithContentURL:video];
+
+    [controller.moviePlayer prepareToPlay];
+    [controller.moviePlayer play];
+    
+    controller.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    [self presentMoviePlayerViewControllerAnimated:controller];
+    
 }
 
 
@@ -96,5 +107,7 @@
 
     return documentsURL;
 }
+
+
 
 @end
