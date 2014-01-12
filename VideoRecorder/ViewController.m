@@ -61,11 +61,10 @@
     
     // create a movie player view controller
     MPMoviePlayerViewController * controller = [[MPMoviePlayerViewController alloc]initWithContentURL:video];
-
     [controller.moviePlayer prepareToPlay];
     [controller.moviePlayer play];
     
-    controller.modalTransitionStyle = UIModalTransitionStyleCrossDissolve;
+    // and present it
     [self presentMoviePlayerViewControllerAnimated:controller];
     
 }
