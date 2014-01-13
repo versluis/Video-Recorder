@@ -12,7 +12,6 @@
 
 @interface ViewController ()
 
-@property (strong, nonatomic) IBOutlet UIView *videoView;
 - (IBAction)recordButton:(id)sender;
 - (IBAction)playbackButton:(id)sender;
 
